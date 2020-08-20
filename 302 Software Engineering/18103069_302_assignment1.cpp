@@ -14,7 +14,6 @@ int main(){
 	if (bad)
 		cout << "Enter Valid lengths (Float values allowed)" << endl;
 	else{
-
 		//checking if lengths are positive and
 		//checking if triangle can be formed
 		if(a+b>c && b+c>a && a+c>b && a>0 && b>0 && c>0){
