@@ -1,0 +1,4 @@
+Time in case of a) is approx. 11 milliseconds
+Time in case of b) is approx. 7 milliseconds
+
+Time difference is almost 5-10 milliseconds for small input
