@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 4</title>
+</head>
+
+<body>
+    <pre>
+<script>
+    
+    var n = prompt("input n", 10);
+
+    if(n < 3){
+        document.write("input n > 2")
+    }
+    else if(n <= 5){
+        upperTree(n);
+//        bottom tree
+        for(i = 1; i <= 2; i++)
+        {
+            for(j=0; j<(n*2-4)/2; j++)
+            {
+                document.write(" ")
+            }
+            for(j=0;j<=2;j++)
+            {
+            document.write("0");
+            }
+            document.write("<br>");
+        }
+    }
+    else{
+        upperTree(n);
+        bottomTree(n);
+        
+    }
+    
+    function upperTree(n) {
+        for(x = 1; x <= n; x++)
+        { 
+            for(y = x; y < n; y++)
+            {
+                document.write(" ");
+            }
+            for(y = 1; y <= (2 * x - 1); y++)
+            {
+                if(x == 1){
+                    document.write("*");
+                }
+                else{
+                    document.write("0");
+                }
+            }
+            document.write("<br>");
+        }
+    }
+
+    function bottomTree(n) {
+        for(i = 1; i <= 3; i++)
+        {
+            for(j = 0; j <= (n * 2 - 5) / 2; j++)
+            {
+                document.write(" ")
+            }
+
+            for(j = 0; j <= 2; j++)
+            {
+                document.write("0");
+            }
+            document.write("<br>");
+        }
+    }
+
+</script>
+</pre>
+</body></html>

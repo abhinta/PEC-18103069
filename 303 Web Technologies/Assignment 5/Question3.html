@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Question 3</title>
+    <script>
+        var map = {
+            "(": ")",
+            "[": "]",
+            "{": "}"
+        }
+        
+        function checkValid(s){
+            var arr = [];
+            for (var i = 0; i < s.length; i++) {
+                var item = s[i];
+
+                if (map[item]) {
+                    arr.push(map[item]);
+                } else {
+                    if (item != arr.pop()) {
+                        return false;
+                    }
+                }
+            }
+            return arr.length == 0;
+        }
+
+        string = prompt("input string", "{{(([]))}}")
+        document.write(checkValid(string));
+
+    </script>
+
+</head>
+
+</html>
